@@ -1,0 +1,35 @@
+.singleImage {
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly !important;
+  margin: 0px 50px;
+}
+.singleImage img {
+  width: 85%;
+  height: 80vh;
+  object-fit: contain;
+  filter: blur(5px);
+  animation: fade-in-animation 0.5s linear 0.5s forwards ;
+}
+.btnChange {
+  border: none;
+  background-color: rgb(150, 148, 148);
+  height: 80vh;
+  color: white;
+  font-size: 100px;
+  opacity: 0.5;
+}
+.btnChange:hover {
+  opacity: 1;
+  /* transform:scale(1.2); */
+}
+@keyframes fade-in-animation {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
